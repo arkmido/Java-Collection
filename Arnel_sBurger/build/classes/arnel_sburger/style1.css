@@ -1,0 +1,7 @@
+.btn{
+	-fx-background-color: #ff0066;
+}
+.btn:hover{
+	-fx-background-color: #f86d90;
+        -fx-effect: dropshadow(three-pass-box, #f86d90, 4, 4, 0, 1);
+}

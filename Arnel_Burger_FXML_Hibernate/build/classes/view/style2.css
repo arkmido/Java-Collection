@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 4, 2016, 10:51:39 PM
+    Author     : L3000n100
+*/
+.root{
+    -fx-background-color:  linear-gradient(#333, #666, #555);
+}
+.button{
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-background-color: #0099ff;
+    -fx-background-radius: 2px;
+    
+}
+#btnOk:hover{
+    -fx-background-color: #33cc33;
+    -fx-cursor: hand;
+}
+#btnCancel:hover{
+    -fx-background-color: #ff5050;
+    -fx-cursor: hand;
+}
+.label{
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.5), 0,0,0,1);
+}

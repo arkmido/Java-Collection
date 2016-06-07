@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 3, 2016, 4:47:02 PM
+    Author     : L3000n100
+*/
+
+.anchor{
+    -fx-background-image: url("back.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+#anchor2{
+    -fx-background-color:  linear-gradient(#455, #655, #455);
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-background-color: #f75368;
+    -fx-background-radius: 5px;
+}
+.button:hover{
+    -fx-background-color: #da0b3f;
+    -fx-cursor: hand;
+}
+.toggle-button{
+    -fx-background-color: linear-gradient(#00ced6, #3b6b78);
+    -fx-background-radius: 50px;
+}
+.toggle-button:hover{
+    -fx-background-color:  linear-gradient(#3b6b78, #00ced6);
+}
+.toggle-button:selected{
+    -fx-background-color:  linear-gradient(#ff8d00, #ffb000);
+}
+.text-input{
+    -fx-text-inner-color: white;
+    -fx-background-color: #777;
+}
+.radio-button{
+    -fx-text-fill: #ffb000;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+.radio-button .dot{
+    -fx-background-radius: 5px;
+    -fx-padding: 3px;
+}
+.radio-button .radio:hover{
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);
+    -fx-text-fill: white;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #33aaff;
+    -fx-text-fill: white;
+}
+#takeorder, #removeselected{
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-background-color: #0099ff;
+    -fx-background-radius: 2px;
+}
+#takeorder:hover{
+    -fx-background-color: #33cc33;
+    -fx-cursor: hand;
+}
+#removeselected:hover{
+    -fx-background-color: #ff1a1a;
+    -fx-cursor: hand;
+}
+#orders{
+    -fx-font-size: 13px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: bold;
+}
+

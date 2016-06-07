@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="600.0" minWidth="800.0" styleClass="anchor" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.View_FXMLDocumentController">
+   <children>
+      <BorderPane layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">   
+         <top>
+            <HBox alignment="CENTER" prefHeight="79.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="600.0">
+                           <image>
+                              <Image url="@arnelBurgerLogo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <right>
+            <VBox prefHeight="254.0" prefWidth="227.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <Label prefHeight="54.0" prefWidth="226.0">
+                     <graphic>
+                        <ImageView fitHeight="54.0" fitWidth="229.0">
+                           <image>
+                              <Image url="@orders.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Label>
+                  <ListView id="orders" fx:id="list1" editable="true" prefHeight="167.0" prefWidth="229.0" VBox.vgrow="ALWAYS" />
+                  <AnchorPane id="anchor2" prefHeight="127.0" prefWidth="229.0">
+                     <children>
+                        <RadioButton fx:id="rdbDine" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Dine-In" textFill="WHITE" AnchorPane.bottomAnchor="62.0">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="rdbOut" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" text="Take-out" textFill="WHITE" AnchorPane.bottomAnchor="91.0">
+                           <font>
+                              <Font name="Roboto Regular" size="14.0" />
+                           </font>
+                        </RadioButton>
+                        <TextField fx:id="tfTotal" editable="false" layoutX="117.0" layoutY="36.0" prefHeight="29.0" prefWidth="82.0" AnchorPane.bottomAnchor="62.0">
+                           <font>
+                              <Font name="Roboto Regular" size="13.0" />
+                           </font></TextField>
+                        <Button id="takeorder" layoutX="24.0" layoutY="93.0" mnemonicParsing="false" onAction="#orderClicked" prefHeight="29.0" prefWidth="71.0" text="ORDER" textFill="WHITE" AnchorPane.bottomAnchor="14.0">
+                           <font>
+                              <Font name="Roboto Regular" size="13.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="135.0" layoutY="17.0" text="Total" textFill="WHITE" AnchorPane.bottomAnchor="95.0">
+                           <font>
+                              <Font name="Roboto Regular" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button id="removeselected" layoutX="115.0" layoutY="84.0" mnemonicParsing="false" onAction="#btnRemoveClicked" prefHeight="29.0" prefWidth="86.0" text="CLEAR ALL" textFill="WHITE" AnchorPane.bottomAnchor="14.0">
+                           <font>
+                              <Font name="Roboto Regular" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </AnchorPane>
+               </children></VBox>
+         </right>
+         <bottom>
+            <HBox prefHeight="122.0" prefWidth="800.0">
+               <children>
+                  <Region prefHeight="103.0" prefWidth="21.0" HBox.hgrow="ALWAYS" />
+                  <StackPane prefHeight="59.0" prefWidth="706.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="103.0" fitWidth="568.0" StackPane.alignment="BOTTOM_LEFT">
+                           <image>
+                              <Image url="@wood.png" />
+                           </image>
+                        </ImageView>
+                        <HBox>
+                           <children>
+                              <Region prefHeight="103.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                              <ToggleButton fx:id="tgBurgers" contentDisplay="TOP" onAction="#tgBurgersClicked" prefHeight="80.0" prefWidth="100.0" selected="true" stylesheets="@style1.css" text="Burgers" textAlignment="JUSTIFY" textFill="WHITE" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Roboto Regular" size="16.0" />
+                                 </font>
+                                 <effect>
+                                    <Reflection />
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ToggleButton>
+                              <Region prefHeight="0.0" HBox.hgrow="ALWAYS" />
+                              <ToggleButton fx:id="tgSidesDrinks" contentDisplay="TOP" layoutY="80.0" mnemonicParsing="false" onAction="#tgSidesDrinksClicked" prefHeight="80.0" prefWidth="100.0" stylesheets="@style1.css" text=" Sides &#10; Drinks" textAlignment="JUSTIFY" textFill="WHITE" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Roboto Regular" size="16.0" />
+                                 </font>
+                                 <effect>
+                                    <Reflection />
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ToggleButton>
+                              <Region prefHeight="0.0" HBox.hgrow="ALWAYS" />
+                              <ToggleButton fx:id="tgDesserts" contentDisplay="TOP" layoutY="170.0" mnemonicParsing="false" onAction="#tgDessertsClicked" prefHeight="80.0" prefWidth="100.0" stylesheets="@style1.css" text="Desserts" textAlignment="JUSTIFY" textFill="WHITE" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Roboto Regular" size="16.0" />
+                                 </font>
+                                 <effect>
+                                    <Reflection />
+                                 </effect>
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </ToggleButton>
+                              <Region prefHeight="110.0" prefWidth="240.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                           <StackPane.margin>
+                              <Insets left="75.0" />
+                           </StackPane.margin>
+                        </HBox>
+                     </children>
+                  </StackPane>
+                  <Region prefHeight="103.0" prefWidth="84.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <ScrollPane fx:id="ScrollPaneCenter" fitToHeight="true" fitToWidth="true" prefHeight="301.0" prefViewportHeight="340.0" prefViewportWidth="348.0" prefWidth="553.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" />
+               </BorderPane.margin>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

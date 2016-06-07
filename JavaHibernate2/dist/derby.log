@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sat Apr 30 08:32:08 GMT-08:00 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0154-6803-4b9d-000000d1efc8 
+on database directory C:\Users\L3000n100\Documents\NetBeansProjects\JavaHibernate2\dist\db\USERS with class loader sun.misc.Launcher$AppClassLoader@106d69c 
+Loaded from file:/C:/Users/L3000n100/Documents/NetBeansProjects/JavaHibernate2/dist/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_65-b17
+user.dir=C:\Users\L3000n100\Documents\NetBeansProjects\JavaHibernate2\dist
+os.name=Windows 7
+os.arch=x86
+os.version=6.1
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

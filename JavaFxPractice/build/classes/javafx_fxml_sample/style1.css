@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 18, 2016, 7:14:30 PM
+    Author     : L3000n100
+*/
+.root{
+    -fx-background-image: url("bg.png");
+}
+.button {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Roboto";
+    -fx-font-weight: bold;
+    
+    -fx-background-color: #ff0066;
+    -fx-color: #fff;
+    -fx-letter-spacing: 1.3px;
+    -fx-padding: 5px 20px 5px 20px;
+    -fx-background-radius: 6px;
+}
+.button:hover{
+    -fx-background-color: #ff0033;
+    -fx-cursor: hand;
+}
+#titlelbl{
+    -fx-text-fill: #ff6633;
+    -fx-effect: dropshadow( two-pass-box, rgba(0.2,0,0,0.3), 5, 0.5, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 45px;
+}
+.label{
+    -fx-text-fill: #00cccc;
+    -fx-effect: dropshadow( two-pass-box, rgba(0.4,0,0,0.5), 5, 0.5, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 40px;
+}
+.radio-button{
+    -fx-text-fill: #ff9900;
+    -fx-font-family: "Roboto";
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    
+    -fx-border-width: 2px;
+    -fx-border-color: #ff9900;
+    -fx-border-radius: 10px;
+    -fx-padding: 4px;
+}
+.radio-button .dot{
+    -fx-background-radius: 5px;
+    -fx-padding: 3px;
+}
+.radio-button .radio:hover{
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}
+
+
+
+
+
+
+	
